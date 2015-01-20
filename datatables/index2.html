@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html ng-app class="no-js" lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "master.dwt" -->
+
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/foundation.css" />
+     <script src="js/angular.min.js"></script>
+    <script src="js/vendor/modernizr.js"></script>
+    
+	<!-- DataTables CSS -->
+	<link href="css/dataTables.foundation.css"rel="stylesheet" type="text/css" />
+
+	<!--
+	<link href="http://cdn.datatables.net/plug-ins/a5734b29083/integration/foundation/dataTables.foundation.css" rel="stylesheet" type="text/css" />
+	-->
+	<!-- jQuery -->
+	<!--<script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>-->
+	<script type="text/javascript" charset="utf8" src="js/jquery-1.10.2.min.js"></script>
+
+  
+
+<!-- #BeginEditable "doctitle" -->
+	<title>ET-710 Test Page</title>
+	<style type="text/css">
+@import url('https://code.angularjs.org/1.2.26/angular-route.min.js');
+.auto-style1 {
+	border-style: solid;
+	border-color: #000080;
+	background-color: #DE770F;
+}
+</style>
+<!-- #EndEditable -->
+</head>
+
+<body>
+
+<!-- #BeginEditable "body" -->
+<div>
+
+  <div class="row">
+      <div class="large-12 columns">
+        <h1>Welcome to the ET710 Expression Web Framework/AngularJS Compatability Test Page</h1>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="large-12 columns">
+      	<div class="panel">
+	        <h3>We&rsquo;re stoked you want to try Foundation! </h3>
+	        <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+	        <p>Once you've exhausted the fun in this document, you should check out:</p>
+	        <div class="row">
+	        	<div class="large-4 medium-4 columns">
+	    		<p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
+	    	</div>
+	        	<div class="large-4 medium-4 columns">
+	        		<p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
+	        	</div>
+	        	<div class="large-4 medium-4 columns">
+	        		<p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
+	        	</div>        
+					</div>
+      	</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-8 medium-8 columns">
+        <h5>Here&rsquo;s your basic grid:</h5>
+        <!-- Grid Example -->
+
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="callout panel">
+              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-6 medium-6 columns">
+            <div class="callout panel">
+              <p>Six columns</p>
+            </div>
+          </div>
+          <div class="large-6 medium-6 columns">
+            <div class="callout panel">
+              <p>Six columns</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="callout panel">
+              <p>Four columns</p>
+            </div>
+          </div>
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="callout panel">
+              <p>Four columns</p>
+            </div>
+          </div>
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="callout panel">
+              <p>Four columns</p>
+            </div>
+          </div>
+        </div>
+        
+        <hr />
+                
+        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+        <form>
+				  <div class="row">
+				    <div class="large-12 columns">
+				      <label>Input Label</label>
+				      <input type="text" placeholder="large-12.columns" />
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="large-4 medium-4 columns">
+				      <label>Input Label</label>
+				      <input type="text" placeholder="large-4.columns" />
+				    </div>
+				    <div class="large-4 medium-4 columns">
+				      <label>Input Label</label>
+				      <input type="text" placeholder="large-4.columns" />
+				    </div>
+				    <div class="large-4 medium-4 columns">
+				      <div class="row collapse">
+				        <label>Input Label</label>
+				        <div class="small-9 columns">
+				          <input type="text" placeholder="small-9.columns" />
+				        </div>
+				        <div class="small-3 columns">
+				          <span class="postfix">.com</span>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="large-12 columns">
+				      <label>Select Box</label>
+				      <select>
+				        <option value="husker">Husker</option>
+				        <option value="starbuck">Starbuck</option>
+				        <option value="hotdog">Hot Dog</option>
+				        <option value="apollo">Apollo</option>
+				      </select>
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="large-6 medium-6 columns">
+				      <label>Choose Your Favorite</label>
+				      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
+				      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+				    </div>
+				    <div class="large-6 medium-6 columns">
+				      <label>Check these out</label>
+				      <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+				      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="large-12 columns">
+				      <label>Textarea Label</label>
+				      <textarea placeholder="small-12.columns"></textarea>
+				    </div>
+				  </div>
+				</form>
+      </div>     
+
+      <div class="large-4 medium-4 columns">
+			  <h5>Try one of these buttons:</h5>
+			  <p><a href="#" class="small button">Simple Button</a><br/>
+        <a href="#" class="small radius button">Radius Button</a><br/>
+        <a href="#" class="small round button">Round Button</a><br/>            
+        <a href="#" class="medium success button">Success Btn</a><br/>
+        <a href="#" class="medium alert button">Alert Btn</a><br/>
+        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
+				<div class="panel">
+        	<h5>So many components, girl!</h5>
+        	<p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
+        	<a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					\<br />
+        </div>
+      </div>
+    </div>
+    
+    <table id="table_id" class="display">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1 Data 1</td>
+            <td>Row 1 Data 2</td>
+        </tr>
+        <tr>
+            <td>Row 2 Data 1</td>
+            <td>Row 2 Data 2</td>
+        </tr>
+    </tbody>
+</table>
+
+<a href="#" data-reveal-id="myModal">Click Me For A Modal</a>
+
+<div id="myModal" class="reveal-modal" data-reveal>
+  <h2>Awesome. I have it.</h2>
+  <p class="lead">Your couch.  It is mine.</p>
+  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+  <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+</div>
+
+<p>This is the end of the Foundation Columns</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table style="width: 100%">
+	<tr>
+		<td style="height: 57px; width: 301px">
+		<h3 data-anchor="DataTables-blog" style="margin: 1em 0px 0.5em; padding: 0px; font-size: 1.4em; font-weight: normal; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+		DataTables blog</h3>
+		</td>
+		<td style="height: 57px; width: 361px">
+		<h3 data-anchor="DataTables-around-the-web" style="margin: 1em 0px 0.5em; padding: 0px; font-size: 1.4em; font-weight: normal; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); width: 347px;">
+		DataTables around the web</h3>
+		</td>
+		<td style="height: 57px"></td>
+	</tr>
+	<tr>
+		<td style="width: 301px">
+		<ul class="blog_link_list markdown" style="margin: 0px; padding: 0px; list-style: none; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+			<li style="margin: 0px; padding: 0.33em 0.5em; text-indent: -0.7em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(230, 230, 230); border-top-width: 1px; border-top-style: solid; border-top-color: rgb(239, 239, 239);">
+			<a href="http://datatables.net/blog/2014-10-22" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: none;">
+			Search result highlighting</a></li>
+		</ul>
+		</td>
+		<td style="width: 361px">
+		<a href="https://github.com/GazetteKCRGdata/datatable-template" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: none; padding-right: 1em; font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background: url(http://datatables.net/media/images/external-site.gif) 100% 50% no-repeat rgb(255, 255, 255);">
+		Handlebars and Tabletop with DataTables</a></td>
+		<td>
+		<a href="https://github.com/stwe/DatatablesBundle" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: none; padding-right: 1em; font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background: url(http://datatables.net/media/images/external-site.gif) 100% 50% no-repeat rgb(255, 255, 255);">
+		Symfony2 bundle update</a></td>
+	</tr>
+	<tr>
+		<td style="width: 301px">
+		<ul class="blog_link_list markdown" style="margin: 0px; padding: 0px; list-style: none; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+			<li style="margin: 0px; padding: 0.33em 0.5em; text-indent: -0.7em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(230, 230, 230); background-color: rgb(246, 246, 246);">
+			<a href="http://datatables.net/blog/2014-10-09" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: none;">
+			DataTables 1.10.3</a></li>
+		</ul>
+		</td>
+		<td rowspan="3" style="width: 361px">
+		<span style="color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">
+		A template from The Gazette and KCRG that uses Handlebars for tempting, 
+		Tabletop for pulling data from a Google spreadsheet and DataTables for 
+		display and interaction</span></td>
+		<td rowspan="3">
+		<i style="color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+		stwe</i><span style="color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);"><span class="Apple-converted-space">&nbsp;</span>has 
+		updated the SgDatatablesBundle to v0.5.2. This bundle makes it easy to 
+		integrate DataTables into a Symfony2 application.</span></td>
+	</tr>
+	<tr>
+		<td style="width: 301px">
+		<ul class="blog_link_list markdown" style="margin: 0px; padding: 0px; list-style: none; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+			<li style="margin: 0px; padding: 0.33em 0.5em; text-indent: -0.7em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(230, 230, 230); background-color: rgb(246, 246, 246);">
+			<a href="http://datatables.net/blog/2014-09-22" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: none;">
+			Alphabet input search - Part III</a></li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 18px; width: 301px">
+		<ul class="blog_link_list markdown" style="margin: 0px; padding: 0px; list-style: none; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+			<li style="margin: 0px; padding: 0.33em 0.5em; text-indent: -0.7em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(230, 230, 230);">
+			<a href="http://datatables.net/blog/2014-09-09" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: none;">
+			Permanent inline checkboxes</a></li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 301px">
+		<ul class="blog_link_list markdown" style="margin: 0px; padding: 0px; list-style: none; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+			<li style="margin: 0px; padding: 0.33em 0.5em; text-indent: -0.7em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(230, 230, 230); background-color: rgb(246, 246, 246);">
+			<a href="http://datatables.net/blog/2014-09-02" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: none;">
+			Alphabet input search - Part II</a></li>
+		</ul>
+		</td>
+		<td class="auto-style1" style="width: 361px">
+		<img alt="" src="images/gw.jpg" style="height: 186px" width="155" /></td>
+		<td>
+		<p style="margin: 0.5em 0px; line-height: 22.3999996185303px; color: rgb(37, 37, 37); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+		<b>George Washington</b><span class="Apple-converted-space">&nbsp;</span>(February 
+		22, 1732<span class="Apple-converted-space">&nbsp;</span><small>[<a href="http://en.wikipedia.org/wiki/Old_Style_and_New_Style_dates" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="Old Style and New Style dates">O.S.</a><span class="Apple-converted-space">&nbsp;</span>February 
+		11, 1731]</small><sup id="cite_ref-calendar_3-0" class="reference" style="line-height: 1; unicode-bidi: -webkit-isolate; font-weight: normal; font-style: normal; font-size: 11px;"><a href="http://en.wikipedia.org/wiki/George_Washington#cite_note-calendar-3" style="text-decoration: none; color: rgb(11, 0, 128); white-space: nowrap; background: none;"><span>[</span>Note 
+		1<span>]</span></a></sup><sup id="cite_ref-Engber_4-0" class="reference" style="line-height: 1; unicode-bidi: -webkit-isolate; font-weight: normal; font-style: normal; font-size: 11px;"><a href="http://en.wikipedia.org/wiki/George_Washington#cite_note-Engber-4" style="text-decoration: none; color: rgb(11, 0, 128); white-space: nowrap; background: none;"><span>[</span>Note 
+		2<span>]</span></a></sup>&nbsp;–<span class="Apple-converted-space">&nbsp;</span><span class="nowrap" style="white-space: nowrap;">December 
+		14</span>, 1799) was the first<a href="http://en.wikipedia.org/wiki/President_of_the_United_States" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="President of the United States">President 
+		of the United States</a><span class="Apple-converted-space">&nbsp;</span>(1789–1797), 
+		the<span class="Apple-converted-space">&nbsp;</span><a class="mw-redirect" href="http://en.wikipedia.org/wiki/Commander-in-Chief#United_States" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="Commander-in-Chief">Commander-in-Chief</a><span class="Apple-converted-space">&nbsp;</span>of 
+		the<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Continental_Army" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="Continental Army">Continental 
+		Army</a><span class="Apple-converted-space">&nbsp;</span>during the<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/American_Revolutionary_War" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="American Revolutionary War">American 
+		Revolutionary War</a>, and one of the<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Founding_Fathers_of_the_United_States" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="Founding Fathers of the United States">Founding 
+		Fathers of the United States</a>.<sup id="cite_ref-Parryxi_5-0" class="reference" style="line-height: 1; unicode-bidi: -webkit-isolate; font-weight: normal; font-style: normal; font-size: 11px;"><a href="http://en.wikipedia.org/wiki/George_Washington#cite_note-Parryxi-5" style="text-decoration: none; color: rgb(11, 0, 128); white-space: nowrap; background: none;"><span>[</span>3<span>]</span></a></sup><span class="Apple-converted-space">&nbsp;</span>He 
+		presided over the convention that drafted the<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/United_States_Constitution" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="United States Constitution">United 
+		States Constitution</a>, which replaced the<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Articles_of_Confederation" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="Articles of Confederation">Articles 
+		of Confederation</a><span class="Apple-converted-space">&nbsp;</span>and 
+		remains the supreme<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Law_of_the_land" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="Law of the land">law 
+		of the land</a>.</p>
+		<p style="margin: 0.5em 0px; line-height: 22.3999996185303px; color: rgb(37, 37, 37); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+		Washington was elected president as the unanimous choice of the<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Electoral_College_(United_States)" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="Electoral College (United States)">electors</a><span class="Apple-converted-space">&nbsp;</span>in 
+		the elections of both<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/United_States_presidential_election,_1788–1789" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="United States presidential election, 1788–1789">1788–1789</a><span class="Apple-converted-space">&nbsp;</span>and<a href="http://en.wikipedia.org/wiki/United_States_presidential_election,_1792" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="United States presidential election, 1792">1792</a>.<sup id="cite_ref-Unger61_6-0" class="reference" style="line-height: 1; unicode-bidi: -webkit-isolate; font-weight: normal; font-style: normal; font-size: 11px;"><a href="http://en.wikipedia.org/wiki/George_Washington#cite_note-Unger61-6" style="text-decoration: none; color: rgb(11, 0, 128); white-space: nowrap; background: none;"><span>[</span>4<span>]</span></a></sup><span class="Apple-converted-space">&nbsp;</span>He 
+		oversaw the creation of a strong, well-financed national government that 
+		maintained neutrality in the wars raging in Europe, suppressed 
+		rebellion, and won acceptance among Americans of all types.<sup id="cite_ref-7" class="reference" style="line-height: 1; unicode-bidi: -webkit-isolate; font-weight: normal; font-style: normal; font-size: 11px;"><a href="http://en.wikipedia.org/wiki/George_Washington#cite_note-7" style="text-decoration: none; color: rgb(11, 0, 128); white-space: nowrap; background: none;"><span>[</span>5<span>]</span></a></sup><span class="Apple-converted-space">&nbsp;</span>Washington 
+		established many forms in government still used today, such as the<span class="Apple-converted-space">&nbsp;</span><a class="mw-redirect" href="http://en.wikipedia.org/wiki/United_States_Cabinet" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="United States Cabinet">cabinet 
+		system</a><span class="Apple-converted-space">&nbsp;</span>and<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/United_States_presidential_inauguration" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="United States presidential inauguration">inaugural 
+		address</a>.<sup id="cite_ref-Michael_Kazin_et_al..2C_eds_2009_589_8-0" class="reference" style="line-height: 1; unicode-bidi: -webkit-isolate; font-weight: normal; font-style: normal; font-size: 11px;"><a href="http://en.wikipedia.org/wiki/George_Washington#cite_note-Michael_Kazin_et_al..2C_eds_2009_589-8" style="text-decoration: none; color: rgb(11, 0, 128); white-space: nowrap; background: none;"><span>[</span>6<span>]</span></a></sup><sup id="cite_ref-Unger2367_9-0" class="reference" style="line-height: 1; unicode-bidi: -webkit-isolate; font-weight: normal; font-style: normal; font-size: 11px;"><a href="http://en.wikipedia.org/wiki/George_Washington#cite_note-Unger2367-9" style="text-decoration: none; color: rgb(11, 0, 128); white-space: nowrap; background: none;"><span>[</span>7<span>]</span></a></sup><span class="Apple-converted-space">&nbsp;</span>His 
+		retirement after two terms and the peaceful transition from his 
+		presidency to that of<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/John_Adams" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="John Adams">John 
+		Adams</a><span class="Apple-converted-space">&nbsp;</span>established a 
+		tradition that continued up until<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Franklin_D._Roosevelt" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="Franklin D. Roosevelt">Franklin 
+		D. Roosevelt</a><span class="Apple-converted-space">&nbsp;</span>was elected 
+		to a third term.<sup id="cite_ref-10" class="reference" style="line-height: 1; unicode-bidi: -webkit-isolate; font-weight: normal; font-style: normal; font-size: 11px;"><a href="http://en.wikipedia.org/wiki/George_Washington#cite_note-10" style="text-decoration: none; color: rgb(11, 0, 128); white-space: nowrap; background: none;"><span>[</span>8<span>]</span></a></sup><span class="Apple-converted-space">&nbsp;</span>Washington 
+		has been widely hailed as "<a href="http://en.wikipedia.org/wiki/Father_of_the_Nation" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="Father of the Nation">father 
+		of his country</a>" even during his lifetime.<sup id="cite_ref-Parryxi_5-1" class="reference" style="line-height: 1; unicode-bidi: -webkit-isolate; font-weight: normal; font-style: normal; font-size: 11px;"><a href="http://en.wikipedia.org/wiki/George_Washington#cite_note-Parryxi-5" style="text-decoration: none; color: rgb(11, 0, 128); white-space: nowrap; background: none;"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-Grizzard105_11-0" class="reference" style="line-height: 1; unicode-bidi: -webkit-isolate; font-weight: normal; font-style: normal; font-size: 11px;"><a href="http://en.wikipedia.org/wiki/George_Washington#cite_note-Grizzard105-11" style="text-decoration: none; color: rgb(11, 0, 128); white-space: nowrap; background: none;"><span>[</span>9<span>]</span></a></sup></p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 301px">
+		<ul class="blog_link_list markdown" style="margin: 0px; padding: 0px; list-style: none; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+			<li style="margin: 0px; padding: 0.33em 0.5em; text-indent: -0.7em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(230, 230, 230);">
+			<a href="http://datatables.net/blog/2014-08-26" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: none;">
+			Alphabet input search - Part I</a></li>
+		</ul>
+		</td>
+		<td style="width: 361px">
+		<a href="https://pypi.python.org/pypi/js.jquery_datatables/1.10" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: none; padding-right: 1em; font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background: url(http://datatables.net/media/images/external-site.gif) 100% 50% no-repeat rgb(255, 255, 255);">
+		DataTables Python package</a></td>
+		<td>
+		<a href="http://chawlasumit.wordpress.com/2014/08/04/how-to-create-a-web-based-file-browser-using-nodejs-express-and-jquery-datatables/" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: none; padding-right: 1em; font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background: url(http://datatables.net/media/images/external-site.gif) 100% 50% no-repeat rgb(255, 255, 255);">
+		DataTables and Node file browser</a></td>
+	</tr>
+	<tr>
+		<td style="width: 301px">
+		<ul class="blog_link_list markdown" style="margin: 0px; padding: 0px; list-style: none; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+			<li style="margin: 0px; padding: 0.33em 0.5em; text-indent: -0.7em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(230, 230, 230); background-color: rgb(246, 246, 246);">
+			<a href="http://datatables.net/blog/2014-08-08" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: none;">
+			Business: UK VAT exchange rates</a></li>
+		</ul>
+		</td>
+		<td rowspan="2" style="width: 361px">
+		<a href="http://fantastic.org/" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: underline; font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+		fantastic</a><span style="color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);"><span class="Apple-converted-space">&nbsp;</span>package 
+		of DataTables and its Extensions making DataTables super easy to include 
+		in a Python environment.</span></td>
+		<td rowspan="2">
+		<span style="color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">
+		Sumit Chawla details how you can use Node.JS to display a file browser, 
+		with the results shown in DataTables.</span></td>
+	</tr>
+	<tr>
+		<td style="width: 301px">
+		<ul class="blog_link_list markdown" style="margin: 0px; padding: 0px; list-style: none; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+			<li style="margin: 0px; padding: 0.33em 0.5em; text-indent: -0.7em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(230, 230, 230); background-color: rgb(246, 246, 246);">
+			<a href="http://datatables.net/blog/2014-07-25" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: none;">
+			Duplicate buttons in Editor</a></li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 301px">
+		<ul class="blog_link_list markdown" style="margin: 0px; padding: 0px; list-style: none; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+			<li style="margin: 0px; padding: 0.33em 0.5em; text-indent: -0.7em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
+			<a href="http://datatables.net/blog/2014-07-16" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: none;">
+			Introducing Responsive for DataTables</a></li>
+		</ul>
+		</td>
+		<td style="width: 361px">&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="width: 301px">
+		<a href="http://datatables.net/blog" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: underline; font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+		More...</a></td>
+		<td style="width: 361px">
+		<a href="http://datatables.net/manual/styling/themeforest" style="cursor: pointer; color: rgb(49, 116, 199); text-decoration: none; font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+		ThemeForest themes with DataTables</a></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="width: 301px; height: 18px"></td>
+		<td rowspan="3" style="width: 361px">
+		<span style="color: rgb(51, 51, 51); font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8799991607666px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">
+		If you are looking for a quick way of creating stylish looking tables, 
+		integrated with the rest of your site, then there are a number of themes 
+		available on ThemeForest which use DataTables.</span></td>
+		<td style="height: 18px"></td>
+	</tr>
+	<tr>
+		<td style="width: 301px">&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="width: 301px">&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+<br />
+
+
+<!-- #EndEditable -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>    
+    
+    <!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/plug-ins/a5734b29083/integration/foundation/dataTables.foundation.js"></script>
+ 
+   <script>
+      $(document).foundation();
+    </script>
+
+    <script>
+$(document).ready( function () {
+    $('#table_id').DataTable();
+} );
+</script> 
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
